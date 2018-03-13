@@ -37,7 +37,7 @@ apis:
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/aws-workdocs/action-describefoldercontents-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/aws-workdocs/action-getfolder-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/workdocs/latest/APIReference/
