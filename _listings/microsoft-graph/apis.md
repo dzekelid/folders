@@ -32,7 +32,7 @@ apis:
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/microsoft-graph/users-id-|-userprincipalname-contactfolders-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/microsoft-graph/users-id-|-userprincipalname-mailfolders-get.md
 x-common:
 - type: x-change-loge
   url: https://developer.microsoft.com/en-us/graph/docs/overview/changelog
