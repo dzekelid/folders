@@ -25,7 +25,7 @@ apis:
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/microsoft-office-365/folders-folder-id-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/microsoft-office-365/folders-folder-id-messages-get.md
 x-common:
 - type: x-developer
   url: http://dev.office.com
