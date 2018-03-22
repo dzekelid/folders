@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteFolder&k=1:
+  /?Action=DeleteFolder:
     get:
       summary: ' Delete Folder '
       description: Permanently deletes the specified folder and its contents
