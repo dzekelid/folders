@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=GetFolder&k=1:
+  /?Action=GetFolder:
     get:
       summary: ' Get Folder '
       description: Retrieves the metadata of the specified folder
