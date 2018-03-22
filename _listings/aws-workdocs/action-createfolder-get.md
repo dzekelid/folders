@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=CreateFolder&k=1:
+  /?Action=CreateFolder:
     get:
       summary: ' Create Folder '
       description: Creates a folder with the specified name and parent folder
