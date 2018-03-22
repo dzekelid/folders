@@ -20,9 +20,9 @@ tags:
 - Files
 - Collaboration
 - Backup
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/box/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Box
@@ -33,7 +33,7 @@ apis:
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/box/users-user-id-folders-folder-id-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/folders-post.md
 x-common:
 - type: x-base
   url: https://api.box.com/
