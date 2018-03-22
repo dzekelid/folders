@@ -11,9 +11,9 @@ tags:
 - Spreadsheets
 - Productivity
 - Documents
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/microsoft-office-365/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: Microsoft Office 365
@@ -25,7 +25,7 @@ apis:
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/microsoft-office-365/folders-folder-id-messages-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/contactfolders-contact-folder-id-get.md
 x-common:
 - type: x-developer
   url: http://dev.office.com
