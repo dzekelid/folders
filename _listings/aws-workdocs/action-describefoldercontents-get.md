@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DescribeFolderContents&k=1:
+  /?Action=DescribeFolderContents:
     get:
       summary: ' Describe Folder Contents '
       description: Describes the contents of the specified folder, including its documents
