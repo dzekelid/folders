@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=DeleteFolderContents&k=1:
+  /?Action=DeleteFolderContents:
     get:
       summary: ' Delete Folder Contents '
       description: Deletes the contents of the specified folder
