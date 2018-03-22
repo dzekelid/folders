@@ -33,7 +33,7 @@ apis:
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/folders-folder-id-metadata-scope-template-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/users-user-id-folders-folder-id-put.md
 x-common:
 - type: x-base
   url: https://api.box.com/
