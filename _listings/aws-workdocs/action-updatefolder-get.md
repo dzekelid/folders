@@ -10,7 +10,7 @@ produces:
 consumes:
 - application/json
 paths:
-  /?Action=UpdateFolder&k=1:
+  /?Action=UpdateFolder:
     get:
       summary: ' Update Folder '
       description: Updates the specified attributes of the specified folder
