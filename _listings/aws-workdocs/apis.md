@@ -22,9 +22,9 @@ tags:
 - Stack Network
 - Documents
 - Amazon Web Services
-created: "2018-03-13"
-modified: "2018-03-13"
-url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/aws-workdocs/apis.yaml
+created: "2018-03-21"
+modified: "2018-03-21"
+url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/aws-workdocs/apis.yaml
 specificationVersion: "0.14"
 apis:
 - name: AWS WorkDocs API
@@ -37,7 +37,7 @@ apis:
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery/folders/master/_listings/aws-workdocs/action-updatefolder-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/aws-workdocs/action-createfolder-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/workdocs/latest/APIReference/
