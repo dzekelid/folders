@@ -34,17 +34,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/users-user-id-folders-folder-id-put.md
-- name: Box Remove Watermark on Folder
-  description: Used to remove the watermark for a corresponding Box Folder.
+- name: Box Get All Metadata on Folder
+  description: Used to retrieve all metadata associated with a given folder
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/folders-folder-id-watermark-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/folders-folder-id-metadata-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/folders-folder-id-watermark-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/folders-folder-id-metadata-get-postman.md
 x-common:
 - type: x-base
   url: https://api.box.com/
