@@ -38,15 +38,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/aws-workdocs/action-updatefolder-get.md
-- name: AWS WorkDocs API Create Folder
-  description: Creates a folder with the specified name and parent folder.
+- name: AWS WorkDocs API Delete Folder
+  description: Permanently deletes the specified folder and its contents.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Enterprise-Applications_AmazonWorkDocs.png
   humanURL: https://aws.amazon.com/workdocs/
   baseURL: http:://{host}//
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/aws-workdocs/action-createfolder-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/aws-workdocs/action-deletefolder-get.md
 x-common:
 - type: x-documentation
   url: http://docs.aws.amazon.com/workdocs/latest/APIReference/
