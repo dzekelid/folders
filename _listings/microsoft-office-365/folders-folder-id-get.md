@@ -1,10 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Microsoft Office 365
-  description: Office 365 is the brand name used by Microsoft for a group of software
-    plus services subscriptions that provides productivity software and related services
-    to its subscribers.
+  title: Microsoft Office 365 Get Folders Folder
+  description: You can retrieve information about other folders by using th...
   version: 1.0.0
 host: outlook.office365.com
 basePath: /ews/odata/Me
