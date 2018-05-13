@@ -1,10 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: Microsoft Graph API
-  description: 'Microsoft Graph exposes multiple APIs from Office 365 and other Microsoft
-    cloud services through a single endpoint: https://graph.microsoft.com. Microsoft
-    Graph simplifies queries that would otherwise be more complex.'
+  title: Microsoft Graph API List Contact Folders
+  description: List contactFolders Get the contact folder collection in the default
+    Contacts folder of the signed-in user.
   version: 1.0.0
 host: graph.microsoft.com
 basePath: /
