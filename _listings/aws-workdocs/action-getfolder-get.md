@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS WorkDocs API
+  title: AWS WorkDocs API Get Folder
   version: 1.0.0
+  description: Retrieves the metadata of the specified folder.
 schemes:
 - http
 produces:
