@@ -26,17 +26,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/folders-folder-id-messages-parameters.md
-- name: Microsoft Office 365 Get Folders Folder
-  description: You can retrieve information about other folders by using th...
+- name: Microsoft Office 365 Add Folders Folder
+  description: You can create a folder by sending a POST request with a JSO...
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-office.png
   humanURL: http://office.com
   baseURL: https://outlook.office365.com//ews/odata/Me
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/folders-folder-id-get.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/folders-folder-id-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/folders-folder-id-post.md
 x-common:
 - type: x-developer
   url: http://dev.office.com
