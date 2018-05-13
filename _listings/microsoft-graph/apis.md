@@ -33,17 +33,16 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-graph/users-id-|-userprincipalname-mailfolders-get.md
-- name: Microsoft Graph API List Child Folders
-  description: List childFolders Get the folder collection under the specified folder.
-    You can use the .../me/MailFolders shortcut to get the top-level folder collection
-    and navigate to another folder.
+- name: Microsoft Graph API List Contact Folders
+  description: List contactFolders Get the contact folder collection in the default
+    Contacts folder of the signed-in user.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-graph.png
   humanURL: https://developer.microsoft.com/en-us/graph/
   baseURL: https://graph.microsoft.com//
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-graph/users-id-|-userprincipalname-mailfolders-id-childfolders-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-graph/users-id-|-userprincipalname-contactfolders-get.md
 x-common:
 - type: x-change-loge
   url: https://developer.microsoft.com/en-us/graph/docs/overview/changelog
