@@ -34,7 +34,37 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/users-user-id-folders-folder-id-put.md
+- name: Box Create Folder
+  description: Used to create a new empty folder. The new folder will be created inside
+    of the specified parent folder
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
+  humanURL: http://box.com
+  baseURL: https://api.box.com//2.0
+  tags: Folders
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/folders-post.md
 x-common:
+- type: x-base
+  url: https://api.box.com/
+- type: x-blog
+  url: http://blog.box.com/
+- type: x-blog-rss
+  url: http://blog.box.com/feed/
+- type: x-crunchbase
+  url: http://www.crunchbase.com/company/box
+- type: x-developer
+  url: http://developers.box.com
+- type: x-github
+  url: https://github.com/boxdotnet
+- type: x-pricing
+  url: https://developers.box.com/box-platform-pricing/
+- type: x-road-map
+  url: https://developers.box.com/roadmap/
+- type: x-twitter
+  url: https://twitter.com/BoxPlatform
+- type: x-website
+  url: http://box.com
 - type: x-base
   url: https://api.box.com/
 - type: x-blog
