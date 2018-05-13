@@ -26,17 +26,15 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/folders-folder-id-messages-parameters.md
-- name: Microsoft Office 365 Delete Folders Folder
-  description: To delete a folder, send a DELETE request to the URL of the ...
+- name: Microsoft Office 365 Patch Folders Folder
+  description: You can update a folder by sending a PATCH request with a JS...
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-office.png
   humanURL: http://office.com
   baseURL: https://outlook.office365.com//ews/odata/Me
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/folders-folder-id-delete.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/folders-folder-id-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/folders-folder-id-patch.md
 x-common:
 - type: x-developer
   url: http://dev.office.com
