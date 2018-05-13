@@ -1,10 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Microsoft Office 365
-  description: Office 365 is the brand name used by Microsoft for a group of software
-    plus services subscriptions that provides productivity software and related services
-    to its subscribers.
+  title: Microsoft Office 365 Add Folders Folder
+  description: You can create a folder by sending a POST request with a JSO...
   version: 1.0.0
 host: outlook.office365.com
 basePath: /ews/odata/Me
