@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS WorkDocs API
+  title: AWS WorkDocs API Delete Folder Contents
   version: 1.0.0
+  description: Deletes the contents of the specified folder.
 schemes:
 - http
 produces:
