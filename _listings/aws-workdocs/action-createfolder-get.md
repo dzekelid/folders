@@ -1,8 +1,9 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS WorkDocs API
+  title: AWS WorkDocs API Create Folder
   version: 1.0.0
+  description: Creates a folder with the specified name and parent folder.
 schemes:
 - http
 produces:
