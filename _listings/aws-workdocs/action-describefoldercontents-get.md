@@ -1,8 +1,10 @@
 ---
 swagger: "2.0"
 info:
-  title: AWS WorkDocs API
+  title: AWS WorkDocs API Describe Folder Contents
   version: 1.0.0
+  description: Describes the contents of the specified folder, including its documents
+    and sub-folders.
 schemes:
 - http
 produces:
