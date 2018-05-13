@@ -34,18 +34,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/users-user-id-folders-folder-id-put.md
-- name: Box Delete Metadata on Folder
-  description: Used to delete the template instance. To delete custom key:value pairs
-    within a template instance, you should refer to the updating metadata section.
+- name: Box Move User's Folder
+  description: "Moves all of the owned content from within one user\u2019s folder
+    into a new folder in another user\u2019s account. You can move folders across
+    users as long as the you have administrative permissions and the \u2018source\u2019
+    user owns the folders. To move everything from the root folder, use \u201C0\u201D
+    which always represents the root folder of a Box account."
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/box1200x630.jpg
   humanURL: http://box.com
   baseURL: https://api.box.com//2.0
   tags: Folders
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/folders-folder-id-metadata-scope-template-delete.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/folders-folder-id-metadata-scope-template-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/users-user-id-folders-folder-id-put.md
 x-common:
 - type: x-base
   url: https://api.box.com/
