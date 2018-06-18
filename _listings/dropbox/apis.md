@@ -1,29 +1,96 @@
 ---
 name: Dropbox
-description: Dropbox is a file hosting service operated by Dropbox, Inc., that offers
-  cloud storage, file synchronization, and client software. Dropbox allows users to
-  create a special folder on each of their computers, which Dropbox then synchronizes
-  so that it appears to be the same folder (with the same contents) regardless of
-  which computer is used to view it. Files placed in this folder also are accessible
-  through a website and mobile phone applications.
-image: https://avatars.githubusercontent.com/u/559357?v=3
+x-slug: dropbox
+description: Dropbox is a modern workspace designed to reduce busywork-so you can
+  focus on the things that matter. Sign in and put your creative energy to work.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
 x-kinRank: "10"
-x-alexaRank: ""
-tags:
-- Storage
-- Storage
-- Storage
-- Stack
-- Sharing
-- My API Stack
-- Indie EdTech Data Jam
-- File Storage
-- API LIfeycle
-created: "2018-05-13"
-modified: "2018-05-13"
+x-alexaRank: "89"
+tags: Folders
+created: "2018-06-18"
+modified: "2018-06-18"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Dropbox Core Returns a list of all shared folders.
+  x-api-slug: dropbox-core
+  description: |-
+    Returns a list of all shared folders the authenticated user has access to.
+
+    This API call requires Full Dropbox or File type [permissions](https://www.dropbox.com/developers/reference/devguide#app-permissions).
+
+    Note that `same_team` is only present if the linked account is a member of a Dropbox for Business team,
+    and `member_id` is only present when this endpoint is called by a Dropbox for Business app and the user
+    is on that team.
+
+    The `membership` field only contains users who have joined the shared folder and does not include users who
+    have been invited but have not accepted. When the `active` field is `false`, it means that a user has left
+    a shared folder (but may still rejoin).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//shared_folders
+  tags: Storage,Documents,Shared_folders
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-folders-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-folders-get-openapi.md
+- name: Dropbox Core Returns metadata about a specific shared folder.
+  x-api-slug: dropbox-core
+  description: |-
+    Returns metadata about a specific shared folder.
+
+    This API call requires Full Dropbox or File type [permissions](https://www.dropbox.com/developers/reference/devguide#app-permissions).
+
+    Note that `same_team` is only present if the linked account is a member of a Dropbox for Business team,
+    and `member_id` is only present when this endpoint is called by a Dropbox for Business app and the user
+    is on that team.
+
+    The `membership` field only contains users who have joined the shared folder and does not include users who
+    have been invited but have not accepted. When the `active` field is `false`, it means that a user has left
+    a shared folder (but may still rejoin).
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//shared_folders/{shared_folder_id}
+  tags: Storage,Documents,Shared_folders,Shared_folder_id
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-foldersshared-folder-id-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-foldersshared-folder-id-get-openapi.md
+- name: Dropbox Core
+  x-api-slug: dropbox-core
+  description: Dropbox is a modern workspace designed to reduce busywork-so you can
+    focus on the things that matter. Sign in and put your creative energy to work.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: Folders
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/openapi.md
+- name: Dropbox Datastore API Shared Folders
+  x-api-slug: dropbox-datastore-api
+  description: /shared_folders
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1//shared_folders
+  tags: Shared,Folders
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-folders-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-folders-get-openapi.md
+- name: Dropbox Datastore API
+  x-api-slug: dropbox-datastore-api
+  description: Keep your apps structured data in sync with Dropbox
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: Folders
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/openapi.md
 x-common:
 - type: x-application-management
   url: https://www.dropbox.com/developers/apps
@@ -41,8 +108,20 @@ x-common:
   url: https://www.dropbox.com/developers/contact
 - type: x-crunchbase
   url: http://www.crunchbase.com/company/dropbox
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/dropbox
 - type: x-developer
   url: https://www.dropbox.com/developers
+- type: x-email
+  url: privacyshield@dropbox.com
+- type: x-email
+  url: privacy@dropbox.com
+- type: x-email
+  url: contractnotices@dropbox.com
+- type: x-email
+  url: copyright@dropbox.com
+- type: x-email
+  url: dispute-notice@dropbox.com
 - type: x-faq
   url: https://www.dropbox.com/developers/support
 - type: x-forum
@@ -65,6 +144,8 @@ x-common:
   url: https://twitter.com/dropbox
 - type: x-webhooks
   url: https://www.dropbox.com/developers/webhooks/docs
+- type: x-website
+  url: http://dropbox.com
 - type: x-website
   url: https://www.dropbox.com
 include: []
