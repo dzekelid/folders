@@ -7,91 +7,58 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbo
 x-kinRank: "10"
 x-alexaRank: "89"
 tags: Folders
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Dropbox Core Returns a list of all shared folders.
-  x-api-slug: dropbox-core
-  description: |-
-    Returns a list of all shared folders the authenticated user has access to.
-
-    This API call requires Full Dropbox or File type [permissions](https://www.dropbox.com/developers/reference/devguide#app-permissions).
-
-    Note that `same_team` is only present if the linked account is a member of a Dropbox for Business team,
-    and `member_id` is only present when this endpoint is called by a Dropbox for Business app and the user
-    is on that team.
-
-    The `membership` field only contains users who have joined the shared folder and does not include users who
-    have been invited but have not accepted. When the `active` field is `false`, it means that a user has left
-    a shared folder (but may still rejoin).
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: http://dropbox.com
-  baseURL: https://api.dropbox.com//1//shared_folders
-  tags: Storage,Documents,Shared_folders
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-folders-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-folders-get-openapi.md
-- name: Dropbox Core Returns metadata about a specific shared folder.
-  x-api-slug: dropbox-core
-  description: |-
-    Returns metadata about a specific shared folder.
-
-    This API call requires Full Dropbox or File type [permissions](https://www.dropbox.com/developers/reference/devguide#app-permissions).
-
-    Note that `same_team` is only present if the linked account is a member of a Dropbox for Business team,
-    and `member_id` is only present when this endpoint is called by a Dropbox for Business app and the user
-    is on that team.
-
-    The `membership` field only contains users who have joined the shared folder and does not include users who
-    have been invited but have not accepted. When the `active` field is `false`, it means that a user has left
-    a shared folder (but may still rejoin).
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: http://dropbox.com
-  baseURL: https://api.dropbox.com//1//shared_folders/{shared_folder_id}
-  tags: Storage,Documents,Shared_folders,Shared_folder_id
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-foldersshared-folder-id-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-foldersshared-folder-id-get-openapi.md
-- name: Dropbox Core
-  x-api-slug: dropbox-core
-  description: Dropbox is a modern workspace designed to reduce busywork-so you can
-    focus on the things that matter. Sign in and put your creative energy to work.
-  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
-  humanURL: http://dropbox.com
-  baseURL: https://api.dropbox.com//1
-  tags: Folders
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/openapi.md
-- name: Dropbox Datastore API Shared Folders
-  x-api-slug: dropbox-datastore-api
+- name: Dropbox - Shared Folders
+  x-api-slug: shared-folders-get
   description: /shared_folders
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
   humanURL: http://dropbox.com
-  baseURL: https://api.dropbox.com//1//shared_folders
-  tags: Shared,Folders
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-folders-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/shared-folders-get-openapi.md
-- name: Dropbox Datastore API
-  x-api-slug: dropbox-datastore-api
-  description: Keep your apps structured data in sync with Dropbox
+- name: Dropbox - Create Folder
+  x-api-slug: fileopscreate-folder-post
+  description: /fileops/create_folder
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
   humanURL: http://dropbox.com
   baseURL: https://api.dropbox.com//1
-  tags: Folders
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
   properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/fileopscreate-folder-post-postman.md
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/fileopscreate-folder-post-openapi.md
+- name: Dropbox - Create Folder
+  x-api-slug: fileopscreate-folder-post
+  description: /fileops/create_folder
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg
+  humanURL: http://dropbox.com
+  baseURL: https://api.dropbox.com//1
+  tags: File Storage, Sharing, Storage, Storage, My API Stack, API LIfeyclessss, Indie
+    EdTech Data Jam, Storage, Stack, Technology, Mobile, SaaS, internet, API Provider,
+    API Service Provider, Profiles, Service API, Relative Data
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/fileopscreate-folder-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/fileopscreate-folder-post-openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://donorschoose.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://dropbox.stack.network
 - type: x-application-management
   url: https://www.dropbox.com/developers/apps
 - type: x-base

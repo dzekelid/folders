@@ -15,109 +15,6 @@ produces:
 consumes:
 - application/json
 paths:
-  /ContactFolders{contact_folder_id}:
-    get:
-      summary: Get Contact Folders Contact Folder
-      description: You can access the default contact folder by using the const...
-      operationId: getContactfoldersContactFolder
-      x-api-path-slug: contactfolderscontact-folder-id-get
-      responses:
-        200:
-          description: OK
-      tags:
-      - Contactfolders
-      - Contact
-      - Folder
-    parameters:
-      summary: Parameters Contact Folders Contact Folder
-      description: Parameters contactfolders contact folder
-      operationId: parametersContactfoldersContactFolder
-      x-api-path-slug: contactfolderscontact-folder-id-parameters
-      responses:
-        200:
-          description: OK
-      tags:
-      - Contactfolders
-      - Contact
-      - Folder
-  /ContactFolders{contact_folder_id}/ChildFolders:
-    get:
-      summary: Get Contact Folders Contact Folder Childfolders
-      description: All non-default contact folders are stored as children of th...
-      operationId: getContactfoldersContactFolderChildfolders
-      x-api-path-slug: contactfolderscontact-folder-idchildfolders-get
-      responses:
-        200:
-          description: OK
-      tags:
-      - Contactfolders
-      - Contact
-      - Folder
-      - ""
-      - Childfolders
-    parameters:
-      summary: Parameters Contact Folders Contact Folder Childfolders
-      description: Parameters contactfolders contact folder  childfolders
-      operationId: parametersContactfoldersContactFolderChildfolders
-      x-api-path-slug: contactfolderscontact-folder-idchildfolders-parameters
-      responses:
-        200:
-          description: OK
-      tags:
-      - Contactfolders
-      - Contact
-      - Folder
-      - ""
-      - Childfolders
-  /ContactFolders{contact_folder_id}/Contacts:
-    get:
-      summary: Get Contact Folders Contact Folder Contacts
-      description: You can request all contacts (or a filtered set by using the...
-      operationId: getContactfoldersContactFolderContacts
-      x-api-path-slug: contactfolderscontact-folder-idcontacts-get
-      responses:
-        200:
-          description: OK
-      tags:
-      - Contactfolders
-      - Contact
-      - Folder
-      - ""
-      - Contacts
-    post:
-      summary: Add Contact Folders Contact Folder Contacts
-      description: You can create a contact by sending a POST request with a JS...
-      operationId: postContactfoldersContactFolderContacts
-      x-api-path-slug: contactfolderscontact-folder-idcontacts-post
-      parameters:
-      - in: body
-        name: body
-        description: (Untitled)
-        schema:
-          $ref: '#/definitions/holder'
-      responses:
-        200:
-          description: OK
-      tags:
-      - Contactfolders
-      - Contact
-      - Folder
-      - ""
-      - Contacts
-    parameters:
-      summary: Parameters Contact Folders Contact Folder Contacts
-      description: Parameters contactfolders contact folder  contacts
-      operationId: parametersContactfoldersContactFolderContacts
-      x-api-path-slug: contactfolderscontact-folder-idcontacts-parameters
-      responses:
-        200:
-          description: OK
-      tags:
-      - Contactfolders
-      - Contact
-      - Folder
-      - ""
-      - Contacts
   /Folders{folder_id}:
     get:
       summary: Get Folders Folder
@@ -237,6 +134,109 @@ paths:
       - Folder
       - ""
       - Messages
+  /ContactFolders{contact_folder_id}:
+    get:
+      summary: Get Contact Folders Contact Folder
+      description: You can access the default contact folder by using the const...
+      operationId: getContactfoldersContactFolder
+      x-api-path-slug: contactfolderscontact-folder-id-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contactfolders
+      - Contact
+      - Folder
+    parameters:
+      summary: Parameters Contact Folders Contact Folder
+      description: Parameters contactfolders contact folder
+      operationId: parametersContactfoldersContactFolder
+      x-api-path-slug: contactfolderscontact-folder-id-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contactfolders
+      - Contact
+      - Folder
+  /ContactFolders{contact_folder_id}/ChildFolders:
+    get:
+      summary: Get Contact Folders Contact Folder Childfolders
+      description: All non-default contact folders are stored as children of th...
+      operationId: getContactfoldersContactFolderChildfolders
+      x-api-path-slug: contactfolderscontact-folder-idchildfolders-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contactfolders
+      - Contact
+      - Folder
+      - ""
+      - Childfolders
+    parameters:
+      summary: Parameters Contact Folders Contact Folder Childfolders
+      description: Parameters contactfolders contact folder  childfolders
+      operationId: parametersContactfoldersContactFolderChildfolders
+      x-api-path-slug: contactfolderscontact-folder-idchildfolders-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contactfolders
+      - Contact
+      - Folder
+      - ""
+      - Childfolders
+  /ContactFolders{contact_folder_id}/Contacts:
+    get:
+      summary: Get Contact Folders Contact Folder Contacts
+      description: You can request all contacts (or a filtered set by using the...
+      operationId: getContactfoldersContactFolderContacts
+      x-api-path-slug: contactfolderscontact-folder-idcontacts-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contactfolders
+      - Contact
+      - Folder
+      - ""
+      - Contacts
+    post:
+      summary: Add Contact Folders Contact Folder Contacts
+      description: You can create a contact by sending a POST request with a JS...
+      operationId: postContactfoldersContactFolderContacts
+      x-api-path-slug: contactfolderscontact-folder-idcontacts-post
+      parameters:
+      - in: body
+        name: body
+        description: (Untitled)
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contactfolders
+      - Contact
+      - Folder
+      - ""
+      - Contacts
+    parameters:
+      summary: Parameters Contact Folders Contact Folder Contacts
+      description: Parameters contactfolders contact folder  contacts
+      operationId: parametersContactfoldersContactFolderContacts
+      x-api-path-slug: contactfolderscontact-folder-idcontacts-parameters
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contactfolders
+      - Contact
+      - Folder
+      - ""
+      - Contacts
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

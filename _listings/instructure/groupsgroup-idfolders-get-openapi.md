@@ -16,6 +16,107 @@ produces:
 consumes:
 - application/json
 paths:
+  /courses/{course_id}/folders:
+    get:
+      summary: List all folders
+      description: List all folders.
+      operationId: list-all-folders
+      x-api-path-slug: coursescourse-idfolders-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Courses
+      - Course
+      - Id
+      - Folders
+    post:
+      summary: Create folder
+      description: Create folder.
+      operationId: create-folder
+      x-api-path-slug: coursescourse-idfolders-post
+      parameters:
+      - in: query
+        name: hidden
+        description: Flag the folder as hidden
+      - in: query
+        name: locked
+        description: Flag the folder as locked
+      - in: query
+        name: lock_at
+        description: The datetime to lock the folder at
+      - in: query
+        name: name
+        description: The name of the folder
+      - in: query
+        name: parent_folder_id
+        description: The id of the folder to store the file in
+      - in: query
+        name: parent_folder_path
+        description: The path of the folder to store the new folder in
+      - in: query
+        name: position
+        description: Set an explicit sort position for the folder
+      - in: query
+        name: unlock_at
+        description: The datetime to unlock the folder at
+      responses:
+        200:
+          description: OK
+      tags:
+      - Courses
+      - Course
+      - Id
+      - Folders
+  /courses/{course_id}/folders/by_path:
+    get:
+      summary: Resolve path
+      description: Resolve path.
+      operationId: resolve-path
+      x-api-path-slug: coursescourse-idfoldersby-path-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Courses
+      - Course
+      - Id
+      - Folders
+      - By
+      - Path
+  /courses/{course_id}/folders/by_path/*full_path:
+    get:
+      summary: Resolve path
+      description: Resolve path.
+      operationId: resolve-path
+      x-api-path-slug: coursescourse-idfoldersby-pathfull-path-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Courses
+      - Course
+      - Id
+      - Folders
+      - By
+      - Path
+      - '*full'
+      - Path
+  /courses/{course_id}/folders/id:
+    get:
+      summary: Get folder
+      description: Get folder.
+      operationId: get-folder
+      x-api-path-slug: coursescourse-idfoldersid-get
+      responses:
+        200:
+          description: OK
+      tags:
+      - Courses
+      - Course
+      - Id
+      - Folders
+      - Id
   /groups/{group_id}/folders:
     get:
       summary: List all folders

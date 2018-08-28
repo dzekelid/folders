@@ -1,0 +1,280 @@
+{
+	"name": "Streadata.io API Gallery - Folders",
+	"description": "This is a repository of folders APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/folders.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-27",
+	"url": "http://folders.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Box",
+			"x-api-slug": "box",
+			"description": "Box is changing how you manage content across your business from simple file sharing to building custom apps.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/162-box.jpg",
+			"humanURL": "http://box.com",
+			"baseURL": "https:///",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Constant Contact",
+			"x-api-slug": "constant-contact",
+			"description": "With Constant Contact, you can create effective email marketing and other online marketing campaigns to meet your business goals. Start your FREE trial today!",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/171-constant-contact.jpg",
+			"humanURL": "http://blogs.constantcontact.com",
+			"baseURL": "https://api.constantcontact.com//v2",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/constant-contact/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Context.IO",
+			"x-api-slug": "context-io",
+			"description": "Create simple email webhooks and code against a free, RESTful, IMAP API.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/172-context-io.jpg",
+			"humanURL": "http://context.io/",
+			"baseURL": "https://api.context.io//2.0/",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/context-io/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Dropbox",
+			"x-api-slug": "dropbox",
+			"description": "Dropbox is a modern workspace designed to reduce busywork-so you can focus on the things that matter. Sign in and put your creative energy to work.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/184-dropbox.jpg",
+			"humanURL": "http://dropbox.com",
+			"baseURL": "https://api-notify.dropbox.com//1",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "SugarSync",
+			"x-api-slug": "sugarsync",
+			"description": "SugarSync is a cloud file sharing, file sync and online backup service that is simple, powerful and easy to use. Unlike Dropbox, SugarSync enables you to back up your existing folder structure. Try it for FREE for 30 days and get started today!",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/488-sugarsync-.jpg",
+			"humanURL": "http://sugarsync.com",
+			"baseURL": "https://api.sugarsync.com//",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/sugarsync/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Instructure",
+			"x-api-slug": "instructure",
+			"description": "Instructure makes software that makes smarter people. Products include Canvas LMS, Bridge and Canvas Network.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/820-instructure.jpg",
+			"humanURL": "http://instructure.com",
+			"baseURL": "https://canvas.instructure.com//api/v1",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/instructure/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Aspose",
+			"x-api-slug": "aspose",
+			"description": ".NET Java Cloud SharePoint Android SSRS and JasperReports file format APIs for developers. Integrate in any enterprise level web desktop and mobile application",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/1865-aspose.jpg",
+			"humanURL": "http://www.aspose.com",
+			"baseURL": "https:///",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/aspose/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Microsoft Office 365",
+			"x-api-slug": "microsoft-office-365",
+			"description": "Integrate Office 365 REST APIs powered by Microsoft Graph into your own app to connect to files, calendars, mail and more.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-office.png",
+			"humanURL": "http://office.com",
+			"baseURL": "https://outlook.office365.com//ews/odata/Me",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "AWS WorkDocs",
+			"x-api-slug": "aws-workdocs",
+			"description": "Amazon WorkDocs is a fully managed, secure enterprise storage and sharing service with strong administrative controls and feedback capabilities that improve user productivity.Users can comment on files, send them to others for feedback, and upload new versions without having to resort to emailing multiple versions of their files as attachments. Users can take advantage of these capabilities wherever they are, using the device of their choice, including PCs, Macs, tablets and phones. Amazon WorkDocs offers IT administrators the option of integrating with existing corporate directories, flexible sharing policies and control of the location where data is stored. Customers can get started using Amazon WorkDocs with a 30-day free trial providing 1 TB of storage per user for up to 50 users.Amazon WorkDocs offers an Administrative SDK, currently in public preview. The Administrative SDK allows you to integrate your applications with Amazon WorkDocs by performing content and permissions updates, and managing users, programmatically. You can sign-up for the public preview here.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Enterprise-Applications_AmazonWorkDocs.png",
+			"humanURL": "https://aws.amazon.com/workdocs/",
+			"baseURL": ":///",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/aws-workdocs/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Google Tag Manager",
+			"x-api-slug": "google-tag-manager",
+			"description": "Deploy and update measurement tags on your websites and mobile apps without major code changes and app releases. Use Google Tag Manager to manage tags (such as tracking and marketing optimization JavaScript tags) on your site. Without editing your site code, you use GTM user interface to add and update AdWords, Google Analytics, Floodlight, and non-Google tags. This reduces errors and allows you to to deploy tags on your site quickly.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/googl_tag_manager_gplus-250.png",
+			"humanURL": "https://developers.google.com/tag-manager/",
+			"baseURL": "://www.googleapis.com//tagmanager/v1",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/google-tag-manager/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Microsoft Graph",
+			"x-api-slug": "microsoft-graph",
+			"description": "Microsoft Graph exposes multiple APIs from Office 365 and other Microsoft cloud services through a single endpoint: https://graph.microsoft.com. Microsoft Graph simplifies queries that would otherwise be more complex. You can use Microsoft Graph to: Access data from multiple Microsoft cloud services, including Azure Active Directory, Exchange Online as part of Office 365, SharePoint, OneDrive, OneNote, and Planner. Navigate between entities and relationships. Access intelligence and insights from the Microsoft cloud (for commercial users).",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-graph.png",
+			"humanURL": "https://developer.microsoft.com/en-us/graph/",
+			"baseURL": "https://graph.microsoft.com//",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-graph/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "SAP",
+			"x-api-slug": "sap",
+			"description": "Get software and technology solutions from SAP, the leader in business applications.  Run simple with the best in cloud, analytics, mobile and IT solutions.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28252-www-sap-com.jpg",
+			"humanURL": "https://www.sap.com/index.html",
+			"baseURL": "https://sandbox.api.sap.com//translationhub/api/v1",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/sap/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Open Science Framework",
+			"x-api-slug": "open-science-framework",
+			"description": "OSF provides free and open source project management support for researchers across the entire research lifecycle. As a collaboration tool, OSF helps researchers work on projects privately with a limited number of collaborators and make parts of their projects public, or make all the project publicly accessible for broader dissemination. As a workflow system, OSF enables connections to the many services researchers already use to streamline their process and increase efficiency. As a flexible repository, it can store and archive research data, protocols, and materials.",
+			"image": "",
+			"humanURL": "https://cos.io",
+			"baseURL": "https://test-api.osf.io//v2",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/open-science-framework/openapi.md"
+				}
+			]
+		},
+		{
+			"name": "Plentymarkets",
+			"x-api-slug": "plentymarkets",
+			"description": "plentymarkets is an all-in-one e-commerce ERP solution, which combines a comprehensive stock management system with a versatile shop system and effortless multichannel sales. Thanks to comprehensive functions and interfaces that include all steps of the e-commerce value chain, you can use the cloud based software to completely automate all of your e-business processes as well as your companys own individual processes.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/plentymarkets.png",
+			"humanURL": "http://www.plentymarkets.co.uk",
+			"baseURL": "https://example.com//",
+			"tags": "Folders",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/plentymarkets/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Folders",
+	"include": [
+		{
+			"name": "Box",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/box/apis.yaml"
+		},
+		{
+			"name": "Constant Contact",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/constant-contact/apis.yaml"
+		},
+		{
+			"name": "Context.IO",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/context-io/apis.yaml"
+		},
+		{
+			"name": "Dropbox",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/dropbox/apis.yaml"
+		},
+		{
+			"name": "SugarSync",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/sugarsync/apis.yaml"
+		},
+		{
+			"name": "Instructure",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/instructure/apis.yaml"
+		},
+		{
+			"name": "Aspose",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/aspose/apis.yaml"
+		},
+		{
+			"name": "Microsoft Office 365",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-office-365/apis.yaml"
+		},
+		{
+			"name": "AWS WorkDocs",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/aws-workdocs/apis.yaml"
+		},
+		{
+			"name": "Google Tag Manager",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/google-tag-manager/apis.yaml"
+		},
+		{
+			"name": "Microsoft Graph",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/microsoft-graph/apis.yaml"
+		},
+		{
+			"name": "SAP",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/sap/apis.yaml"
+		},
+		{
+			"name": "Open Science Framework",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/open-science-framework/apis.yaml"
+		},
+		{
+			"name": "Plentymarkets",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/folders/master/_listings/plentymarkets/apis.yaml"
+		}
+	]
+}

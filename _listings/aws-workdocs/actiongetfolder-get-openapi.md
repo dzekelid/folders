@@ -122,6 +122,47 @@ paths:
           description: OK
       tags:
       - Folders
+  /?Action=GetFolderPath:
+    get:
+      summary: Get Folder Path
+      description: Retrieves the path information (the hierarchy from the root folder)
+        for the specified folder.
+      operationId: getFolderPath
+      x-api-path-slug: actiongetfolderpath-get
+      parameters:
+      - in: query
+        name: Fields
+        description: A comma-separated list of values
+        type: string
+      - in: query
+        name: FolderId
+        description: The ID of the folder
+        type: string
+      - in: query
+        name: Limit
+        description: The maximum number of levels in the hierarchy to return
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Folders
+  /?Action=UpdateFolder:
+    get:
+      summary: Update Folder
+      description: Updates the specified attributes of the specified folder.
+      operationId: updateFolder
+      x-api-path-slug: actionupdatefolder-get
+      parameters:
+      - in: query
+        name: FolderId
+        description: The ID of the folder
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Folders
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

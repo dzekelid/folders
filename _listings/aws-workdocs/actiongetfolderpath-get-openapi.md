@@ -148,6 +148,22 @@ paths:
           description: OK
       tags:
       - Folders
+  /?Action=UpdateFolder:
+    get:
+      summary: Update Folder
+      description: Updates the specified attributes of the specified folder.
+      operationId: updateFolder
+      x-api-path-slug: actionupdatefolder-get
+      parameters:
+      - in: query
+        name: FolderId
+        description: The ID of the folder
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Folders
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

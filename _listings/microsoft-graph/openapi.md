@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Microsoft Graph
 x-complete: 1
@@ -37,6 +36,28 @@ paths:
       - List
       - Child
       - Folders
+    post:
+      summary: Create Contact Folder
+      description: Create ContactFolder Create a new contactFolder as a child of a
+        specified folder.
+      operationId: CreateContactFolder
+      x-api-path-slug: mecontactfoldersidchildfolders-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contact
+      - Folder
   /users/{id | userPrincipalName}/contactFolders/{id}/childFolders:
     get:
       summary: List Child Folders
@@ -62,6 +83,31 @@ paths:
       - List
       - Child
       - Folders
+    post:
+      summary: Create Contact Folder
+      description: Create ContactFolder Create a new contactFolder as a child of a
+        specified folder.
+      operationId: CreateContactFolder
+      x-api-path-slug: usersid--userprincipalnamecontactfoldersidchildfolders-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id
+        type: string
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contact
+      - Folder
   /me/mailFolders/{id}/childFolders:
     get:
       summary: List Child Folders
@@ -85,6 +131,27 @@ paths:
       - List
       - Child
       - Folders
+    post:
+      summary: Create Mail Folder
+      description: Create MailFolder Use this API to create a new child mailfolder.
+      operationId: CreateMailFolder
+      x-api-path-slug: memailfoldersidchildfolders-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
   /users/{id | userPrincipalName}/mailFolders/{id}/childFolders:
     get:
       summary: List Child Folders
@@ -111,6 +178,30 @@ paths:
       - List
       - Child
       - Folders
+    post:
+      summary: Create Mail Folder
+      description: Create MailFolder Use this API to create a new child mailfolder.
+      operationId: CreateMailFolder
+      x-api-path-slug: usersid--userprincipalnamemailfoldersidchildfolders-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id
+        type: string
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
   /users/{id | userPrincipalName}/contactFolders:
     get:
       summary: List Contact Folders
@@ -135,6 +226,28 @@ paths:
       - List
       - Contact
       - Folders
+    post:
+      summary: Create Contact Folder
+      description: Create ContactFolder Create a new contactFolder under the user's
+        default contacts folder.
+      operationId: CreateContactFolder
+      x-api-path-slug: usersid--userprincipalnamecontactfolders-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contact
+      - Folder
   /users/{id | userPrincipalName}/mailFolders:
     get:
       summary: List Mail Folders
@@ -159,4 +272,374 @@ paths:
       - List
       - Mail
       - Folders
----
+    post:
+      summary: Create Mail Folder
+      description: Create MailFolder Use this API to create a new mail folder.
+      operationId: CreateMailFolder
+      x-api-path-slug: usersid--userprincipalnamemailfolders-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
+  /me/contactFolders/{id}:
+    delete:
+      summary: Delete Contact Folder
+      description: Delete contactFolder Delete contactFolder other than the default
+        contactFolder.
+      operationId: DeleteContactFolder
+      x-api-path-slug: mecontactfoldersid-delete
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+        type: string
+      - in: path
+        name: id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contact
+      - Folder
+    get:
+      summary: Get Contact Folder
+      description: Get contactFolder Get a contact folder by using the contact folder
+        ID.
+      operationId: GetContactFolder
+      x-api-path-slug: mecontactfoldersid-get
+      parameters:
+      - in: query
+        name: $expand
+        type: string
+      - in: header
+        name: Authorization
+        description: Bearer
+      - in: path
+        name: id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contact
+      - Folder
+  /users/{id | userPrincipalName}/contactFolders/{id}:
+    delete:
+      summary: Delete Contact Folder
+      description: Delete contactFolder Delete contactFolder other than the default
+        contactFolder.
+      operationId: DeleteContactFolder
+      x-api-path-slug: usersid--userprincipalnamecontactfoldersid-delete
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+        type: string
+      - in: path
+        name: id
+        type: string
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contact
+      - Folder
+    get:
+      summary: Get Contact Folder
+      description: Get contactFolder Get a contact folder by using the contact folder
+        ID.
+      operationId: GetContactFolder
+      x-api-path-slug: usersid--userprincipalnamecontactfoldersid-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+        type: string
+      - in: path
+        name: id
+        type: string
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Contact
+      - Folder
+  /me/drive/root/children:
+    post:
+      summary: Create A New Folder
+      description: Create a new folder Create a new folder or DriveItem in a Drive
+        with a specified parent item or path.
+      operationId: CreateANewFolder
+      x-api-path-slug: medriverootchildren-post
+      responses:
+        200:
+          description: OK
+      tags:
+      - CreateNew
+      - Folder
+  /me/drive/items/{parent-item-id}/children:
+    post:
+      summary: Create A New Folder
+      description: Create a new folder Create a new folder or DriveItem in a Drive
+        with a specified parent item or path.
+      operationId: CreateANewFolder
+      x-api-path-slug: medriveitemsparentitemidchildren-post
+      parameters:
+      - in: path
+        name: parent-item-id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - CreateNew
+      - Folder
+  /drives/{drive-id}/items/{parent-item-id}/children:
+    post:
+      summary: Create A New Folder
+      description: Create a new folder Create a new folder or DriveItem in a Drive
+        with a specified parent item or path.
+      operationId: CreateANewFolder
+      x-api-path-slug: drivesdriveiditemsparentitemidchildren-post
+      parameters:
+      - in: path
+        name: drive-id
+        type: string
+      - in: path
+        name: parent-item-id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - CreateNew
+      - Folder
+  /groups/{group-id}/drive/items/{parent-item-id}/children:
+    post:
+      summary: Create A New Folder
+      description: Create a new folder Create a new folder or DriveItem in a Drive
+        with a specified parent item or path.
+      operationId: CreateANewFolder
+      x-api-path-slug: groupsgroupiddriveitemsparentitemidchildren-post
+      parameters:
+      - in: path
+        name: group-id
+        type: string
+      - in: path
+        name: parent-item-id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - CreateNew
+      - Folder
+  /me/mailFolders/{id}/copy:
+    post:
+      summary: Mail Folder Copy
+      description: 'mailFolder: copy Copy a mailfolder and its contents to another
+        mailfolder.'
+      operationId: MailFolder:Copy
+      x-api-path-slug: memailfoldersidcopy-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
+      - Copy
+  /users/{id | userPrincipalName}/mailFolders/{id}/copy:
+    post:
+      summary: Mail Folder Copy
+      description: 'mailFolder: copy Copy a mailfolder and its contents to another
+        mailfolder.'
+      operationId: MailFolder:Copy
+      x-api-path-slug: usersid--userprincipalnamemailfoldersidcopy-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id
+        type: string
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
+      - Copy
+  /me/mailFolders/{id}:
+    delete:
+      summary: Delete Mail Folder
+      description: Delete mailFolder Delete mailFolder.
+      operationId: DeleteMailFolder
+      x-api-path-slug: memailfoldersid-delete
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+        type: string
+      - in: path
+        name: id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
+    get:
+      summary: Get Mail Folder
+      description: Get mailFolder Retrieve the properties and relationships of mailfolder
+        object.
+      operationId: GetMailFolder
+      x-api-path-slug: memailfoldersid-get
+      parameters:
+      - in: query
+        name: $expand
+        type: string
+      - in: header
+        name: Authorization
+        description: Bearer
+      - in: path
+        name: id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
+  /users/{id | userPrincipalName}/mailFolders/{id}:
+    delete:
+      summary: Delete Mail Folder
+      description: Delete mailFolder Delete mailFolder.
+      operationId: DeleteMailFolder
+      x-api-path-slug: usersid--userprincipalnamemailfoldersid-delete
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+        type: string
+      - in: path
+        name: id
+        type: string
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
+    get:
+      summary: Get Mail Folder
+      description: Get mailFolder Retrieve the properties and relationships of mailfolder
+        object.
+      operationId: GetMailFolder
+      x-api-path-slug: usersid--userprincipalnamemailfoldersid-get
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+        type: string
+      - in: path
+        name: id
+        type: string
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
+  /me/mailFolders/{id}/move:
+    post:
+      summary: Mail Folder Move
+      description: 'mailFolder: move Move a mailfolder and its contents to another
+        mailfolder.'
+      operationId: MailFolder:Move
+      x-api-path-slug: memailfoldersidmove-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
+      - Move
+  /users/{id | userPrincipalName}/mailFolders/{id}/move:
+    post:
+      summary: Mail Folder Move
+      description: 'mailFolder: move Move a mailfolder and its contents to another
+        mailfolder.'
+      operationId: MailFolder:Move
+      x-api-path-slug: usersid--userprincipalnamemailfoldersidmove-post
+      parameters:
+      - in: header
+        name: Authorization
+        description: 'Bearer '
+      - in: header
+        name: Content-Type
+        description: application/json
+      - in: path
+        name: id
+        type: string
+      - in: path
+        name: id | userPrincipalName
+        type: string
+      responses:
+        200:
+          description: OK
+      tags:
+      - Mail
+      - Folder
+      - Move

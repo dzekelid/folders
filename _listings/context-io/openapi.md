@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Context.IO
 x-complete: 1
@@ -79,4 +78,3 @@ paths:
       - Label
       - Folders
       - Folder
----
